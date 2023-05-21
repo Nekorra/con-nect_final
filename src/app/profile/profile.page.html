@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-title class = "profileText" text-center>Profile</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" ><ion-icon color="dark" name="log-out-outline"></ion-icon></ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid class="main-header">
+    <div align="center">
+      <ion-avatar (click)="uploadImage()">
+        <img src="../../assets/addimage.png" *ngIf="this.image == null || this.image == undefined"/>
+        <img [src]="this.image" *ngIf="this.image"/>
+      </ion-avatar>
+    </div>
+  </ion-grid>
+
+  
+  <ion-row class="ion-padding-horizontal">
+    <ion-col size="6">
+      <ion-item lines="none" class="ion-text-center">
+        <ion-label>
+          <p class = "writingFont"> {{this.firstName}} {{this.lastName}}</p>
+        </ion-label>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-card class="personalBio">
+    <ion-card-header>
+      <ion-card-title class = "writingFont">Matching</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Bio: 
+      <ion-textarea [(ngModel)]="bio" [value]="this.bio">
+      </ion-textarea>
+      Image of yourself:
+      <img src="../../assets/addimage.png" *ngIf="this.image == null || this.image == undefined"/>
+        <img [src]="this.image" *ngIf="this.image"/>
+      <ion-button expand="block" (click)="updateBio()">update</ion-button>
+    </ion-card-content>
+
+  </ion-card>
+  
+</ion-content>

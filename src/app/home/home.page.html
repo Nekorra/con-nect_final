@@ -1,0 +1,58 @@
+<ion-content>
+  <div class="header" > CON-NECT </div>
+
+
+  <div class="subheaderText"> Learning Courses </div>
+
+  <swiper-container #swiper (afterinit)="swiperReady()" [slidesPerView]="1">
+    <swiper-slide>
+      <div>
+        <ion-card class="icon1">
+          <img class="image" src="../../assets/python.png" />
+          <p class="imageText">Python</p>
+        </ion-card>
+        <ion-card class="icon2">
+          <img class="image" src="../../assets/drawing4.webp" />
+          <p class="imageText">Drawing</p>
+        </ion-card>
+        <ion-card class="icon3">
+          <img class="image" src="../../assets/wiring.jpeg" />
+          <p class="imageText">Wiring</p>
+        </ion-card>
+        <ion-card class="icon4">
+          <img class="image" src="../../assets/plumbing.jpeg" />
+          <p class="imageText">Plumbing</p>
+        </ion-card>
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div>
+        <ion-card class="icon1">
+          <img class="image" src="../../assets/python.png" />
+          <p class="imageText">Python</p>
+        </ion-card>
+        <ion-card class="icon2">
+          <img class="image" src="../../assets/drawing4.webp" />
+          <p class="imageText">Drawing</p>
+        </ion-card>
+        <ion-card class="icon3">
+          <img class="image" src="../../assets/wiring.jpeg" />
+          <p class="imageText">Wiring</p>
+        </ion-card>
+        <ion-card class="icon4">
+          <img class="image" src="../../assets/plumbing.jpeg" />
+          <p class="imageText">Plumbing</p>
+        </ion-card>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+  <ion-button class="forwardButton" shape="circle" fill="clear" (click)="goNext()">
+    <ion-icon name="chevron-forward-outline"></ion-icon>
+  </ion-button>
+  <ion-button class="backButton" shape="circle" fill="clear" (click)="goBack()">
+    <ion-icon name="chevron-back-outline"></ion-icon>
+  </ion-button>
+  
+  <ion-button  expand="block" (click)="redirect()">Launch Interview Prep!</ion-button>
+
+</ion-content>

@@ -1,0 +1,30 @@
+<ion-content srollY="false">
+  <swiper-container #swiper (afterinit)="swiperReady()" [pagination]="true" [slidesPerView]="1">
+    <swiper-slide>
+      <img src="../../assets/welcome_1.svg" class = "image">
+      <h1 class = "title">About </h1> 
+      <p>Make Job hunting a little easier with us!</p>
+      <ion-button shape="circle" (click)="goNext()">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </ion-button>
+    </swiper-slide>
+
+    <swiper-slide>
+      <img src="../../assets/welcome_2.svg" class = "image">
+      <h1 class = "title">Connect </h1> 
+      <p>Find mentors and resources to help you reintigrate with society!</p>
+      <ion-button shape="circle" (click)="goNext()">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </ion-button>
+    </swiper-slide>
+    <swiper-slide>
+      <img src="../../assets/welcome_3.svg" class = "image">
+      <h1 class = "title">All the help you need </h1> 
+      <p>All in one place</p>
+      <ion-button shape="circle" (click)="goRegister()">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </ion-button>
+      
+    </swiper-slide>
+  </swiper-container>
+</ion-content>

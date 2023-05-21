@@ -1,0 +1,78 @@
+
+.position{
+    position: center;
+    width: 100px;
+    height: 150px;
+}
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-top: 27px;
+    height: 65px;
+    margin-left: 10px;
+  
+    .card {
+      display: inline-block;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+.text{
+    @font-face {
+        font-family: Poppins;
+        src: url(../../assets/Poppins.zip);
+      }
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      color: white;
+}
+
+.background1{
+    background: linear-gradient(274.42deg, #7863FF 0%, #5940f8 124.45%);
+    height: 70px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.chats{
+    margin-top: 10px;
+}
+
+.message-input {
+  width: 100%;
+  border: 1px solid var(--ion-color-medium);
+  border-radius: 6px;
+  background: #fff;
+  resize: none;
+  margin-top: 0px;
+  --padding-start: 8px;
+}
+
+.message {
+  padding: 10px !important;
+  border-radius: 10px !important;
+  margin-bottom: 4px !important;
+  white-space: pre-wrap;
+}
+
+.my-message {
+  background: var(--ion-color-tertiary);
+  color: #fff;
+}
+
+.other-message {
+  background: var(--ion-color-secondary);
+  color: #fff;
+}
+
+.time {
+  color: #dfdfdf;
+  float: right;
+  font-size: small;
+}

@@ -1,0 +1,29 @@
+
+<ion-tabs>  
+
+  <ion-fab vertical="bottom" horizontal="center" translucent="true">
+    <ion-fab-button (click)="navigateHome()">
+      <ion-icon name="home-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  
+  <ion-tab-bar slot="bottom" class="ion-no-border">
+    <ion-tab-button tab="">
+      <ion-icon name="document-text-outline"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="find" class="comments">
+      <ion-icon name="swap-horizontal-outline"></ion-icon>
+    </ion-tab-button>
+
+    <svg height="50" viewBox="0 0 100 50" width="100" xmlns="http://www.w3.org/2000/svg"><path d="M100 0v50H0V0c.543 27.153 22.72 49 50 49S99.457 27.153 99.99 0h.01z" fill="" fill-rule="evenodd"></path></svg>
+
+    <ion-tab-button tab="chat" class="notifs">
+      <ion-icon name="chatbubble-outline"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="profile">
+      <ion-icon name="person-outline"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

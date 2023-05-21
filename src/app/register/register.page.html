@@ -1,0 +1,64 @@
+
+<ion-content>
+
+<div class="content">
+  <form [formGroup]="registerForm">
+    <div class="list">
+      <ion-list>
+        <ion-item lines="none">
+          <ion-icon name="person-outline" slot="start"></ion-icon>
+          <ion-input formControlName="firstName" placeholder="First Name" class="inputFont">
+          </ion-input>
+        </ion-item>
+       
+        <br />
+        <ion-item lines="none">
+          <ion-icon name="person-outline" slot="start"></ion-icon>
+          <ion-input formControlName="lastName" placeholder="Last Name" class="inputFont">
+          </ion-input>
+        </ion-item> 
+
+        <br />
+        <ion-item lines="none">
+          <ion-icon name="mail-outline" slot="start"></ion-icon>
+          <ion-input formControlName="email" placeholder="Email" class="inputFont" type="email">
+          </ion-input>
+        </ion-item>
+
+        <br/>
+        <ion-item lines="none">
+          <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+          <ion-input formControlName="password" placeholder="Password" class="inputFont"  type="password"[type]="showPassword ? 'text': 'password'">
+          </ion-input> 
+        </ion-item>
+
+
+        <br/>
+        <ion-item lines="none">
+          <ion-icon name="people-outline" slot="start" *ngIf="!this.role"></ion-icon>
+          <ion-icon name="business-outline" slot="start" *ngIf="this.role=='organization'"></ion-icon>
+          <ion-icon name="briefcase-outline" slot="start" *ngIf="this.role=='individual'"></ion-icon>
+          <ion-input formControlName="role" placeholder="Who are you" class="inputFont"  [value]="this.role" [disabled]="true" (click)="presentActionSheet()">
+          </ion-input> 
+        </ion-item>
+        
+      </ion-list>
+  
+
+    </div>
+
+  </form>
+
+  <ion-button
+    class="loginButton"
+    shape="round"
+    expand="block"
+    style="text-transform: none; font-weight: normal"
+  >
+    <div class="buttonfont" (click) = "register()">Register</div>
+  </ion-button>
+
+  <div class="registerText1">Already have an account?</div>
+  <div class="registerText2" (click)="navigateLogin()">Login</div>
+</div>
+</ion-content>

@@ -1,0 +1,162 @@
+ion-content{
+  width: 100%;
+  height: 100%;
+}
+
+.header{
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(274.42deg, #7863FF 0%, #5940f8 124.45%);
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 15px;
+  border-radius: 10px;
+  font-family: Poppins-Regular;
+}
+
+swiper-container {
+  height:40%;
+  width: 80%;
+  margin-top: 20px;
+  align-items: center;
+}
+
+swiper-slide{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide p{
+  position: absolute;
+  width: 315px;
+  height: 63px;
+  left: 5%;
+  bottom: 25%;
+  text-align: left;
+  /* Text / Medium Text (Regular) */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+ion-button[shape=circle] {
+  --border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  --color: black;
+  --background-activated: #5940f8;
+}
+
+ion-card {
+  width: 90%;
+  height: 95%;
+  box-shadow: none;
+  background: grey;
+}
+
+.imageSize {
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+  align-items: center;
+}
+
+
+.title {
+  position: absolute;
+  width: 210px;
+  height: 36px;
+  left: 5%;
+  bottom: 33%;
+  padding-bottom: 20px;
+  /* Title / H2 (Bold) */
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  white-space: nowrap;
+  /* identical to box height, or 150% */
+
+
+  /* Black-color */
+
+  color: #1D1617;
+}
+
+.swiper-slide-active {
+  transform: scale(1.05, 1.05);
+  transition: 400ms all ease-in-out;
+  ion-card {
+      img {
+          transform: scale(1, 1);
+          object-fit: cover;
+      }
+  }
+}
+
+.backButton{
+   margin-top: -380px;
+   margin-left: 0px;
+}
+.forwardButton{
+  margin-top: -350px;
+  margin-left: 335px;
+}
+
+.subheaderText{
+  color: #1D1617;
+	font-family: Poppins-Regular;
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 20px;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
+.icon1{
+  height:120px;
+  width: 120px;
+  left: 2%;
+}
+.icon2{
+  height:120px;
+  width: 120px;
+  left: 49%;
+  top: -24%;
+}
+.icon3{
+  height:120px;
+  width: 120px;
+  left: 2%;
+  top: -24%;
+}
+.icon4{
+  height:120px;
+  width: 120px;
+  left: 49%;
+  top: -48%;
+}
+
+.image{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.imageText{
+  top: 60%;
+  color: white;
+  right: 40%;
+}
+
+.subheader{
+  padding-top: 5%;
+}

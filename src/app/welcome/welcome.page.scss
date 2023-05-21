@@ -1,0 +1,66 @@
+swiper-container {
+    height: 100%;
+    width: 100%;
+}
+
+swiper-slide{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide p{
+    position: absolute;
+    width: 315px;
+    height: 63px;
+    left: 5%;
+    bottom: 25%;
+    text-align: left;
+    /* Text / Medium Text (Regular) */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.image {
+    width: 100%;
+    top: 5%;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    width: 210px;
+    height: 36px;
+    left: 5%;
+    bottom: 33%;
+    padding-bottom: 20px;
+    /* Title / H2 (Bold) */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    white-space: nowrap;
+    /* identical to box height, or 150% */
+
+
+    /* Black-color */
+
+    color: #1D1617;
+}
+
+
+ion-button[shape=circle] {
+    --border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 30px; 
+    right: 20px;
+    --background: linear-gradient(274.42deg, #7863FF 0%, #5940f8 124.45%);
+}
